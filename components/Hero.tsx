@@ -1,3 +1,4 @@
+import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -24,7 +25,12 @@ export default function Hero() {
           </div>
         </div>
         <div className="relative">
-          <div className="aspect-[4/3] rounded-2xl bg-slate-100 border shadow-soft overflow-hidden"></div>
+          <Image
+            src="/sip_Planterra_construction.jpg"
+            alt="Picture of the author"
+            width={500}
+            height={500}
+          />
           <p className="mt-3 text-sm text-slate-500">Illustrative render (replace with project images when available).</p>
         </div>
       </div>

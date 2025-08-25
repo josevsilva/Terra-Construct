@@ -1,3 +1,4 @@
+import Image from 'next/image'
 
 export default function Projects() {
   return (
@@ -16,8 +17,13 @@ export default function Projects() {
           </ul>
         </div>
         <div className="rounded-2xl border bg-white shadow-soft p-4">
-          <div className="aspect-[4/3] rounded-xl bg-slate-100 border" />
-          <p className="mt-3 text-sm text-slate-600">Replace with master plan or floor plan visuals.</p>
+        <Image
+            src="/El_salvador_project.jpg"
+            alt="Picture of the author"
+            width={500}
+            height={500}
+          />
+          <p className="mt-3 text-sm text-slate-600">100 Prefab homes Masterplan in San Salvador.</p>
         </div>
       </div>
     </section>
