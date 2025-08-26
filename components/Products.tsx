@@ -10,7 +10,7 @@ export default function Products() {
     {
       name: "Tiny Home (18–30 m²)",
       desc: "Rapid-deploy, compact units for workforce, emergency shelter, or tourism",
-      img: "/tiny_home_outdoor",
+      img: "/tiny_home_outdoor.jpg",
     },
     {
       name: "Community Facilities",
