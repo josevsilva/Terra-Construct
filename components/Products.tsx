@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Products() {
   const products = [
@@ -21,7 +21,7 @@ export default function Products() {
 
   return (
     <section id="products" className="bg-slate-50">
-      <div className="container mx-auto py-16">
+      <div className="container mx-auto py-16 px-6">
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
           Prefab products for real–world needs
         </h2>
