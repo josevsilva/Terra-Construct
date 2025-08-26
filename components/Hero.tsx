@@ -31,7 +31,7 @@ export default function Hero() {
             width={500}
             height={500}
           />
-          <p className="mt-3 text-sm text-slate-500">Illustrative render (replace with project images when available).</p>
+          <p className="mt-3 text-sm text-slate-500">We specialize in prefabricated homes built with Structural Insulated Panels (SIPs), delivering high-quality housing at affordable prices. Our solutions adapt to any terrain, ensuring resilient communities everywhere.</p>
         </div>
       </div>
     </section>
