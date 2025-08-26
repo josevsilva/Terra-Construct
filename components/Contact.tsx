@@ -11,7 +11,7 @@ export default function Contact() {
                 Planterra Construction · 1800 N Field St, Dallas, TX 75202
               </p>
               <p className="mt-2 text-slate-700">Email: info@planterraconstruction.com</p>
-              <p className="text-slate-700">Phone: +1 (###) ###-####</p>
+              <p className="text-slate-700">Phone: +1 (786) 216-6721</p>
               <p className="mt-2 text-sm text-slate-500">Replace placeholders with your active contact details.</p>
             </div>
             <form className="space-y-4" action="mailto:info@planterraconstruction.com" method="post" encType="text/plain">
