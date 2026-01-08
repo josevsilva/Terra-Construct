@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Tech from "@/components/Tech";
 import Products from "@/components/Products";
+import OilGas from "@/components/OilGas";
 import Projects from "@/components/Projects";
 import Impact from "@/components/Impact";
 import Partners from "@/components/Partners";
@@ -16,6 +17,7 @@ export default function Page() {
       <Hero />
       <Tech />
       <Products />
+      <OilGas />
       <Projects />
       <Impact />
       <Partners />
