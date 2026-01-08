@@ -3,19 +3,19 @@ import Image from 'next/image';
 export default function OilGas() {
   const products = [
     {
-      name: "HDPE & Poly Pipe Systems",
-      desc: "Placeholder description for HDPE pipe systems and infrastructure.",
-      img: "/placeholder-hdpe.jpg",
+      name: "HDPE Poly Pipe",
+      desc: "Lightweight, corrosion-resistant pipeline systems for oil field operations. Faster installation, lower costs, proven reliability across Venezuela, Guyana, and Texas markets.",
+      img: "/hdpe_poly_pipe.png",
     },
     {
-      name: "Modular Workforce Housing",
-      desc: "Placeholder description for modular workforce housing solutions.",
-      img: "/placeholder-housing.jpg",
+      name: "Christmas Tree Parts & Valves",
+      desc: "Field-ready wellhead equipment and valve assemblies. Supply and logistics support for upstream operations across the Americas.",
+      img: "/christmas_tree_parts.png",
     },
     {
-      name: "Industrial Infrastructure",
-      desc: "Placeholder description for industrial construction and facilities.",
-      img: "/placeholder-industrial.jpg",
+      name: "Mobile Hotel Accommodation",
+      desc: "Rapid-deploy workforce housing for remote oil & gas sites. Complete living facilities designed for challenging operational environments and extended field campaigns.",
+      img: "/mobile_hotel.png",
     },
   ];
 
@@ -100,8 +100,14 @@ export default function OilGas() {
                 key={p.name}
                 className="rounded-2xl border bg-white p-6 shadow-soft hover:shadow-lg transition"
               >
-                <div className="aspect-[4/3] rounded-xl overflow-hidden border bg-slate-100 flex items-center justify-center">
-                  <span className="text-slate-400 text-sm">Image Placeholder</span>
+                <div className="aspect-[4/3] rounded-xl overflow-hidden border">
+                  <Image
+                    src={p.img}
+                    alt={p.name}
+                    width={600}
+                    height={400}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="mt-4 text-lg font-semibold">{p.name}</h3>
                 <p className="mt-2 text-slate-700">{p.desc}</p>
