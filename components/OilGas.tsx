@@ -1,6 +1,24 @@
 import Image from 'next/image';
 
 export default function OilGas() {
+  const products = [
+    {
+      name: "HDPE & Poly Pipe Systems",
+      desc: "Placeholder description for HDPE pipe systems and infrastructure.",
+      img: "/placeholder-hdpe.jpg",
+    },
+    {
+      name: "Modular Workforce Housing",
+      desc: "Placeholder description for modular workforce housing solutions.",
+      img: "/placeholder-housing.jpg",
+    },
+    {
+      name: "Industrial Infrastructure",
+      desc: "Placeholder description for industrial construction and facilities.",
+      img: "/placeholder-industrial.jpg",
+    },
+  ];
+
   const services = [
     {
       name: "HDPE & Poly Pipe Systems",
@@ -65,6 +83,31 @@ export default function OilGas() {
           <p className="mt-4 text-lg text-slate-600">
             U.S. Standards. LATAM Execution. Field-Proven Results.
           </p>
+        </div>
+
+        {/* Products with Images */}
+        <div className="mt-16">
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
+            Oil & Gas Infrastructure Solutions
+          </h2>
+          <p className="mt-3 max-w-2xl text-slate-700">
+            Specialized products for energy operations—from pipelines to workforce facilities.
+          </p>
+
+          <div className="mt-8 grid md:grid-cols-3 gap-6">
+            {products.map((p) => (
+              <article
+                key={p.name}
+                className="rounded-2xl border bg-white p-6 shadow-soft hover:shadow-lg transition"
+              >
+                <div className="aspect-[4/3] rounded-xl overflow-hidden border bg-slate-100 flex items-center justify-center">
+                  <span className="text-slate-400 text-sm">Image Placeholder</span>
+                </div>
+                <h3 className="mt-4 text-lg font-semibold">{p.name}</h3>
+                <p className="mt-2 text-slate-700">{p.desc}</p>
+              </article>
+            ))}
+          </div>
         </div>
 
         {/* Services */}
